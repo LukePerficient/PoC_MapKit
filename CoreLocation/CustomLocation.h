@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+#import <UIKit/UIKit.h>
 
-@interface CustomLocation : NSObject
+@interface CustomLocation : NSObject <CLLocationManagerDelegate>
 
+@property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) CLLocation *location;
+-(id)init:(UIViewController<CLLocationManagerDelegate>*) viewCont;
 @end
