@@ -20,26 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Do any additional setup after loading the view, typically from a nib.
-    
-/*    self.locationManager = [[CLLocationManager alloc] init];
-    
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    // Code to check if the app can respond to the new selector found in iOS 8. If so, request it.
-    if([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
-        [self.locationManager requestAlwaysAuthorization];
-        // Or [self.locationManager requestWhenInUseAuthorization];
-    }
-    [self.locationManager startUpdatingLocation];
-    [self.locationManager startUpdatingHeading];
-    self.locationManager.delegate = self;
-    self.location = [[CLLocation alloc] init];*/
-    
     _cL = [[CustomLocation alloc] init:self];
     
 }
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
-    
     
     _cL.location = locations.lastObject;
     self.latitude.text = [NSString stringWithFormat:@"%.04f", _cL.location.coordinate.latitude];
@@ -55,17 +39,6 @@
     self.magHeading.text = [NSString stringWithFormat:@"%f", newHeading.magneticHeading];
     self.trueHeading.text = [NSString stringWithFormat:@"%f", newHeading.trueHeading];
     
-    
-    
-   /* self.location = locations.lastObject;
-    self.latitude.text = [NSString stringWithFormat:@"%.04f", self.location.coordinate.latitude];
-    self.longitude.text = [NSString stringWithFormat:@"%.04f", self.location.coordinate.longitude];
-    self.altitude.text = [NSString stringWithFormat:@"%.04f", self.location.altitude];
-    self.haccuracy.text = [NSString stringWithFormat:@"%.04f", self.location.horizontalAccuracy];
-    self.vaccuracy.text = [NSString stringWithFormat:@"%.04f", self.location.verticalAccuracy];
-    self.speed.text = [NSString stringWithFormat:@"%.04f", self.location.speed];
-    self.course.text = [NSString stringWithFormat:@"%.04f", self.location.course];
-    */
 }
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading {
@@ -98,14 +71,7 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180 / M_PI;}
     float bearingDegrees = RadiansToDegrees(bearing);
     bearingDegrees = (int)bearingDegrees % 360;
     
-    //NSLog(@"%d", (int)bearingDegrees);
     return bearingDegrees;
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end

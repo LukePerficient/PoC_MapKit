@@ -14,14 +14,13 @@
 
 @property CustomLocation *cL;
 @property ViewController *vc;
+
 @end
 
 @implementation CoreLocationTests
 
 - (void)setUp {
     [super setUp];
-    _vc = [[ViewController alloc] init];
-    _cL = [[CustomLocation alloc] init:_vc];
     
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
@@ -31,12 +30,40 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-    _vc locationManager:(_cL.locationManager ) didUpdateLocations:<#(nonnull NSArray<CLLocation *> *)#>
-    NSLog(@"LatTest: %f", _cL.location.coordinate.latitude);
+- (void)testWithInitializedData {
+    _vc = [[ViewController alloc] init];
+    _cL = [[CustomLocation alloc] init:_vc];
     
+    NSLog(@"Lat: %f", _cL.location.coordinate.latitude);
+    NSLog(@"Long: %f", _cL.location.coordinate.longitude);
+    NSLog(@"Altitude: %f", _cL.location.altitude);
+    
+    NSLog(@"HorAcc: %f", _cL.location.horizontalAccuracy);
+    NSLog(@"VertAcc: %f", _cL.location.verticalAccuracy);
+    NSLog(@"Speed: %f", _cL.location.speed);
+    NSLog(@"Course: %f", _cL.location.course);
+    
+    XCTAssertEqual(_cL.location.coordinate.latitude, 0.000000);
+    XCTAssertEqual(_cL.location.coordinate.longitude, 0.000000);
+    XCTAssertEqual(_cL.location.altitude, 0.000000);
+    XCTAssertEqual(_cL.location.horizontalAccuracy, 0.000000);
+    XCTAssertEqual(_cL.location.verticalAccuracy, -1.000000);
+    XCTAssertEqual(_cL.location.speed, -1.000000);
+    XCTAssertEqual(_cL.location.course, -1.000000);
+}
+
+- (void)testCalculateBearingDegrees {
+    _vc = [[ViewController alloc] init];
+    _cL = [[CustomLocation alloc] init:_vc];
+    
+    double expectedBearing = 14.000000;
+    double actualBearing = [_vc calculating_bearing];
+    
+    XCTAssert(expectedBearing == actualBearing);
+}
+
+/*
+- (void)testWithCustomData {
     
 }
 
@@ -47,6 +74,6 @@
     
     
 }
-
+*/
 
 @end

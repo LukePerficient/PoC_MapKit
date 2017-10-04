@@ -32,14 +32,13 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    
-    XCUIElementQuery *tabBarsQuery = [[XCUIApplication alloc] init].tabBars;
-    XCUIElement *locationButton = tabBarsQuery.buttons[@"Location"];
+- (void)testUIDataElements {
     
     
-        // Use recording to get started writing UI tests.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app.tabBars.buttons[@"Location"] tap];
+    [app.staticTexts[@"37.7874"] tap];
+    
 }
 
 @end

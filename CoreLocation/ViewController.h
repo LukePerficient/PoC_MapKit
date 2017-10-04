@@ -24,6 +24,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *trueHeading;
 @property (weak, nonatomic) IBOutlet UIImageView *compass;
 
+- (int)calculating_bearing;
+
 @end
 
 
