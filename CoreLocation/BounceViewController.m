@@ -20,6 +20,8 @@
    // Do any additional setup after loading the view.
     position = CGPointMake(10, 3);
     [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(bounce) userInfo:nil repeats:YES];
+   
+    
     [super viewDidLoad];
 }
 
@@ -27,12 +29,22 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 -(void)bounce {
     img.center = CGPointMake(img.center.x+position.x, img.center.y+position.y);
-    if ((img.center.x > 400) || (img.center.x < 0))
+    
+    if ((img.center.x > 400) || (img.center.x < 0)){
         position.x = -position.x;
-    if (img.center.y > 600 || img.center.y < 0)
+        GPUImageSepiaFilter *stillImageFilter2 = [[GPUImageSepiaFilter alloc] init];
+        img.image = [stillImageFilter2 imageByFilteringImage:img.image];
+    }
+    
+    if (img.center.y > 600 || img.center.y < 0){
         position.y = -position.y;
+        GPUImageHueFilter *stillImageFilter2 = [[GPUImageHueFilter alloc] init];
+        img.image = [stillImageFilter2 imageByFilteringImage:img.image];
+    }
+    
     coordinateLabel.text = [NSString stringWithFormat:@"Center: %.02f, %.02f",img.center.x, img.center.y];
     
 }

@@ -12,6 +12,7 @@ target 'CoreLocation' do
     inherit! :search_paths
     pod 'GoogleMaps'
     pod 'GooglePlaces'
+    pod 'GPUImage'
 
     # Pods for testing
   end

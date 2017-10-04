@@ -24,6 +24,12 @@
 		7C36F3751F83F19B00AC87A1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C36F3741F83F19B00AC87A1 /* MapViewController.m */; };
 		7C36F3781F852D4600AC87A1 /* CustomLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C36F3771F852D4600AC87A1 /* CustomLocation.m */; };
 		7C36F37C1F8556F700AC87A1 /* BounceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C36F37B1F8556F700AC87A1 /* BounceViewController.m */; };
+		7C36F3901F857E9B00AC87A1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C36F38F1F857E9B00AC87A1 /* CoreMedia.framework */; };
+		7C36F3921F857EAA00AC87A1 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C36F3911F857EAA00AC87A1 /* CoreVideo.framework */; };
+		7C36F3941F857EB800AC87A1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C36F3931F857EB800AC87A1 /* OpenGLES.framework */; };
+		7C36F3961F857EC000AC87A1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C36F3951F857EC000AC87A1 /* AVFoundation.framework */; };
+		7C36F3981F857EC900AC87A1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C36F3971F857EC900AC87A1 /* QuartzCore.framework */; };
+		7C36F3A51F85805600AC87A1 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C36F3A21F85802300AC87A1 /* GPUImage.framework */; };
 		7F876EEE6AE53D1E03331C18 /* libPods-CoreLocationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6DD7B23EF4133202112B27 /* libPods-CoreLocationTests.a */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +48,40 @@
 			remoteGlobalIDString = 7C36F3321F83BE8500AC87A1;
 			remoteInfo = CoreLocation;
 		};
+		7C36F39F1F85802300AC87A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C36F3991F85802200AC87A1 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+		7C36F3A11F85802300AC87A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C36F3991F85802200AC87A1 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCE209E51943F20C002FEED8;
+			remoteInfo = GPUImageFramework;
+		};
+		7C36F3A31F85804400AC87A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C36F3991F85802200AC87A1 /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCE209E41943F20C002FEED8;
+			remoteInfo = GPUImageFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7C36F38C1F8578C300AC87A1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		03E868A2D735D3143756FE61 /* Pods-CoreLocationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreLocationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreLocationTests/Pods-CoreLocationTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +117,12 @@
 		7C36F3791F8543F900AC87A1 /* P.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = P.png; sourceTree = "<group>"; };
 		7C36F37A1F8556F700AC87A1 /* BounceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BounceViewController.h; sourceTree = "<group>"; };
 		7C36F37B1F8556F700AC87A1 /* BounceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BounceViewController.m; sourceTree = "<group>"; };
+		7C36F38F1F857E9B00AC87A1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		7C36F3911F857EAA00AC87A1 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		7C36F3931F857EB800AC87A1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		7C36F3951F857EC000AC87A1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7C36F3971F857EC900AC87A1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7C36F3991F85802200AC87A1 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "../../../Downloads/GPUImage-master 2/framework/GPUImage.xcodeproj"; sourceTree = "<group>"; };
 		A229DC4813B34A68CCFEB48C /* libPods-CoreLocationUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreLocationUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC06079CF603EE80758644D /* libPods-CoreLocation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreLocation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17B8D45DAC9F64A466DAAFA /* Pods-CoreLocationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreLocationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreLocationUITests/Pods-CoreLocationUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +134,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C36F3A51F85805600AC87A1 /* GPUImage.framework in Frameworks */,
+				7C36F3981F857EC900AC87A1 /* QuartzCore.framework in Frameworks */,
+				7C36F3961F857EC000AC87A1 /* AVFoundation.framework in Frameworks */,
+				7C36F3941F857EB800AC87A1 /* OpenGLES.framework in Frameworks */,
+				7C36F3921F857EAA00AC87A1 /* CoreVideo.framework in Frameworks */,
+				7C36F3901F857E9B00AC87A1 /* CoreMedia.framework in Frameworks */,
 				7C36F3711F83C27200AC87A1 /* UIKit.framework in Frameworks */,
 				7C36F36F1F83C26B00AC87A1 /* CoreGraphics.framework in Frameworks */,
 				7C36F36D1F83C26400AC87A1 /* CoreData.framework in Frameworks */,
@@ -131,6 +182,7 @@
 		7C36F32A1F83BE8500AC87A1 = {
 			isa = PBXGroup;
 			children = (
+				7C36F3991F85802200AC87A1 /* GPUImage.xcodeproj */,
 				7C36F3351F83BE8500AC87A1 /* CoreLocation */,
 				7C36F3511F83BE8600AC87A1 /* CoreLocationTests */,
 				7C36F35C1F83BE8600AC87A1 /* CoreLocationUITests */,
@@ -196,6 +248,11 @@
 		7C36F36B1F83C26400AC87A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7C36F3971F857EC900AC87A1 /* QuartzCore.framework */,
+				7C36F3951F857EC000AC87A1 /* AVFoundation.framework */,
+				7C36F3931F857EB800AC87A1 /* OpenGLES.framework */,
+				7C36F3911F857EAA00AC87A1 /* CoreVideo.framework */,
+				7C36F38F1F857E9B00AC87A1 /* CoreMedia.framework */,
 				7C36F3701F83C27200AC87A1 /* UIKit.framework */,
 				7C36F36E1F83C26B00AC87A1 /* CoreGraphics.framework */,
 				7C36F36C1F83C26400AC87A1 /* CoreData.framework */,
@@ -204,6 +261,15 @@
 				A229DC4813B34A68CCFEB48C /* libPods-CoreLocationUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C36F39A1F85802200AC87A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C36F3A01F85802300AC87A1 /* libGPUImage.a */,
+				7C36F3A21F85802300AC87A1 /* GPUImage.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,10 +285,12 @@
 				7C36F3311F83BE8500AC87A1 /* Resources */,
 				69EE4FA4736849BEA8FCE1C0 /* [CP] Embed Pods Frameworks */,
 				AA651F18FAA3E9F4A3797233 /* [CP] Copy Pods Resources */,
+				7C36F38C1F8578C300AC87A1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7C36F3A41F85804400AC87A1 /* PBXTargetDependency */,
 			);
 			name = CoreLocation;
 			productName = CoreLocation;
@@ -305,6 +373,12 @@
 			mainGroup = 7C36F32A1F83BE8500AC87A1;
 			productRefGroup = 7C36F3341F83BE8500AC87A1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7C36F39A1F85802200AC87A1 /* Products */;
+					ProjectRef = 7C36F3991F85802200AC87A1 /* GPUImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7C36F3321F83BE8500AC87A1 /* CoreLocation */,
@@ -313,6 +387,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7C36F3A01F85802300AC87A1 /* libGPUImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGPUImage.a;
+			remoteRef = 7C36F39F1F85802300AC87A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C36F3A21F85802300AC87A1 /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 7C36F3A11F85802300AC87A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7C36F3311F83BE8500AC87A1 /* Resources */ = {
@@ -369,6 +460,11 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-CoreLocationTests/Pods-CoreLocationTests-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -540,6 +636,11 @@
 			target = 7C36F3321F83BE8500AC87A1 /* CoreLocation */;
 			targetProxy = 7C36F35A1F83BE8600AC87A1 /* PBXContainerItemProxy */;
 		};
+		7C36F3A41F85804400AC87A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImageFramework;
+			targetProxy = 7C36F3A31F85804400AC87A1 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -610,9 +711,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -659,6 +762,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;

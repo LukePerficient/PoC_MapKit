@@ -22,6 +22,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="P.png" translatesAutoresizingMaskIntoConstraints="NO" id="h0k-K5-D3b">
                                 <rect key="frame" x="154" y="323" width="106" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="KV8-c2-B5M" appends="YES" id="hDT-GL-8aV"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjv-YL-jPE">
                                 <rect key="frame" x="20" y="666" width="374" height="21"/>
@@ -42,6 +46,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="16F-xn-LXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="KV8-c2-B5M"/>
             </objects>
             <point key="canvasLocation" x="695.6521739130435" y="-1242.3913043478262"/>
         </scene>
