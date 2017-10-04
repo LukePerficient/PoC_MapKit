@@ -54,7 +54,7 @@ GMSMapView *googleMapView;
 /*    // Creates a marker in the center of the map.
     GMSMarker *marker = [[GMSMarker alloc] init];
     marker.position = CLLocationCoordinate2DMake(LatX, LongY);
-    //marker.title = @"Sydney";
+    marker.title = @"Sydney";
     marker.snippet = [NSString stringWithFormat:@"Lat: %f, Long:%f",LatX, LongY];
     marker.map = googleMapView;
 */

@@ -23,6 +23,7 @@
 		7C36F3711F83C27200AC87A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C36F3701F83C27200AC87A1 /* UIKit.framework */; };
 		7C36F3751F83F19B00AC87A1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C36F3741F83F19B00AC87A1 /* MapViewController.m */; };
 		7C36F3781F852D4600AC87A1 /* CustomLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C36F3771F852D4600AC87A1 /* CustomLocation.m */; };
+		7C36F37C1F8556F700AC87A1 /* BounceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C36F37B1F8556F700AC87A1 /* BounceViewController.m */; };
 		7F876EEE6AE53D1E03331C18 /* libPods-CoreLocationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6DD7B23EF4133202112B27 /* libPods-CoreLocationTests.a */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,9 @@
 		7C36F3741F83F19B00AC87A1 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		7C36F3761F852D4600AC87A1 /* CustomLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLocation.h; sourceTree = "<group>"; };
 		7C36F3771F852D4600AC87A1 /* CustomLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLocation.m; sourceTree = "<group>"; };
+		7C36F3791F8543F900AC87A1 /* P.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = P.png; sourceTree = "<group>"; };
+		7C36F37A1F8556F700AC87A1 /* BounceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BounceViewController.h; sourceTree = "<group>"; };
+		7C36F37B1F8556F700AC87A1 /* BounceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BounceViewController.m; sourceTree = "<group>"; };
 		A229DC4813B34A68CCFEB48C /* libPods-CoreLocationUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreLocationUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC06079CF603EE80758644D /* libPods-CoreLocation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreLocation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17B8D45DAC9F64A466DAAFA /* Pods-CoreLocationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreLocationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreLocationUITests/Pods-CoreLocationUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 				7C36F3371F83BE8500AC87A1 /* AppDelegate.m */,
 				7C36F3391F83BE8500AC87A1 /* ViewController.h */,
 				7C36F33A1F83BE8500AC87A1 /* ViewController.m */,
+				7C36F37A1F8556F700AC87A1 /* BounceViewController.h */,
+				7C36F37B1F8556F700AC87A1 /* BounceViewController.m */,
 				7C36F3731F83F19B00AC87A1 /* MapViewController.h */,
 				7C36F3741F83F19B00AC87A1 /* MapViewController.m */,
 				7C36F3761F852D4600AC87A1 /* CustomLocation.h */,
@@ -163,6 +169,7 @@
 				7C36F3471F83BE8500AC87A1 /* Info.plist */,
 				7C36F3481F83BE8500AC87A1 /* main.m */,
 				7C36F33F1F83BE8500AC87A1 /* CoreLocation.xcdatamodeld */,
+				7C36F3791F8543F900AC87A1 /* P.png */,
 				7C36F3721F83D08200AC87A1 /* compass.jpeg */,
 			);
 			path = CoreLocation;
@@ -498,6 +505,7 @@
 				7C36F3781F852D4600AC87A1 /* CustomLocation.m in Sources */,
 				7C36F3381F83BE8500AC87A1 /* AppDelegate.m in Sources */,
 				7C36F3751F83F19B00AC87A1 /* MapViewController.m in Sources */,
+				7C36F37C1F8556F700AC87A1 /* BounceViewController.m in Sources */,
 				7C36F3491F83BE8500AC87A1 /* main.m in Sources */,
 				7C36F3411F83BE8500AC87A1 /* CoreLocation.xcdatamodeld in Sources */,
 			);
