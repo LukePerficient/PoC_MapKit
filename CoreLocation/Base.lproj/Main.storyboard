@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -306,12 +307,8 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance to Perficient Lafayette:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aK-2p-Lc4">
-                                <rect key="frame" x="35.666666666666657" y="595" width="343" height="78"/>
+                                <rect key="frame" x="20" y="595" width="374" height="78"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="78" id="4lx-eq-rBs"/>
-                                    <constraint firstAttribute="width" constant="343" id="h5h-nJ-E1X"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -319,16 +316,96 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="9aK-2p-Lc4" firstAttribute="leading" secondItem="tYx-fV-a1w" secondAttribute="leadingMargin" id="17O-E1-r5I"/>
+                            <constraint firstAttribute="bottom" secondItem="Nra-B8-t5S" secondAttribute="bottom" constant="132" id="4UQ-4t-oAJ"/>
                             <constraint firstItem="9aK-2p-Lc4" firstAttribute="centerX" secondItem="tYx-fV-a1w" secondAttribute="centerX" id="5tp-kV-rQd"/>
+                            <constraint firstItem="scI-6D-Tse" firstAttribute="bottom" secondItem="9aK-2p-Lc4" secondAttribute="bottom" constant="14" id="6mO-XQ-dd7"/>
+                            <constraint firstItem="Nra-B8-t5S" firstAttribute="leading" secondItem="scI-6D-Tse" secondAttribute="leading" constant="16" id="8SN-T4-uKe"/>
+                            <constraint firstItem="Nra-B8-t5S" firstAttribute="top" secondItem="scI-6D-Tse" secondAttribute="top" constant="65" id="8bl-ba-5YL"/>
                             <constraint firstItem="Nra-B8-t5S" firstAttribute="centerX" secondItem="tYx-fV-a1w" secondAttribute="centerX" id="Are-2w-PBX"/>
+                            <constraint firstItem="scI-6D-Tse" firstAttribute="trailing" secondItem="Nra-B8-t5S" secondAttribute="trailing" constant="16" id="B1C-ne-f4Q"/>
+                            <constraint firstItem="Nra-B8-t5S" firstAttribute="centerX" secondItem="tYx-fV-a1w" secondAttribute="centerX" id="Bya-8x-kls"/>
                             <constraint firstItem="Nra-B8-t5S" firstAttribute="top" secondItem="scI-6D-Tse" secondAttribute="top" constant="65" id="DE8-OI-Ywq"/>
+                            <constraint firstItem="9aK-2p-Lc4" firstAttribute="centerX" secondItem="Nra-B8-t5S" secondAttribute="centerX" id="E8J-dT-3YD"/>
+                            <constraint firstItem="9aK-2p-Lc4" firstAttribute="leading" secondItem="tYx-fV-a1w" secondAttribute="leadingMargin" id="Fs4-Ge-Few"/>
                             <constraint firstItem="scI-6D-Tse" firstAttribute="bottom" secondItem="Nra-B8-t5S" secondAttribute="bottom" constant="100" id="NAR-yR-bCL"/>
                             <constraint firstItem="Nra-B8-t5S" firstAttribute="leading" secondItem="scI-6D-Tse" secondAttribute="leading" constant="16" id="PJ9-o7-yF0"/>
+                            <constraint firstItem="9aK-2p-Lc4" firstAttribute="top" secondItem="Nra-B8-t5S" secondAttribute="bottom" constant="8" symbolic="YES" id="R3U-Bv-i6F"/>
+                            <constraint firstItem="scI-6D-Tse" firstAttribute="bottom" secondItem="9aK-2p-Lc4" secondAttribute="bottom" constant="14" id="Tpz-yl-9q7"/>
+                            <constraint firstItem="Nra-B8-t5S" firstAttribute="centerX" secondItem="9aK-2p-Lc4" secondAttribute="centerX" id="XQq-s0-kRh"/>
+                            <constraint firstItem="9aK-2p-Lc4" firstAttribute="centerX" secondItem="Nra-B8-t5S" secondAttribute="centerX" id="aZx-tA-YfR"/>
+                            <constraint firstItem="9aK-2p-Lc4" firstAttribute="top" secondItem="Nra-B8-t5S" secondAttribute="bottom" constant="8" symbolic="YES" id="hWu-hc-WdU"/>
                             <constraint firstItem="9aK-2p-Lc4" firstAttribute="top" secondItem="Nra-B8-t5S" secondAttribute="bottom" constant="8" id="iCe-DH-4we"/>
+                            <constraint firstItem="9aK-2p-Lc4" firstAttribute="top" secondItem="Nra-B8-t5S" secondAttribute="bottom" constant="8" symbolic="YES" id="iEv-xD-pgp"/>
+                            <constraint firstItem="scI-6D-Tse" firstAttribute="trailing" secondItem="9aK-2p-Lc4" secondAttribute="trailing" constant="270.67000000000002" id="sWR-d7-Nf2"/>
                             <constraint firstItem="scI-6D-Tse" firstAttribute="trailing" secondItem="Nra-B8-t5S" secondAttribute="trailing" constant="16" id="wC8-qm-kZQ"/>
                             <constraint firstItem="scI-6D-Tse" firstAttribute="bottom" secondItem="9aK-2p-Lc4" secondAttribute="bottom" constant="14" id="wS7-Nk-3QQ"/>
+                            <constraint firstItem="9aK-2p-Lc4" firstAttribute="leading" secondItem="scI-6D-Tse" secondAttribute="leading" constant="271" id="znh-TY-QFK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="scI-6D-Tse"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6mO-XQ-dd7"/>
+                                <exclude reference="B1C-ne-f4Q"/>
+                                <exclude reference="Tpz-yl-9q7"/>
+                                <exclude reference="sWR-d7-Nf2"/>
+                                <exclude reference="4UQ-4t-oAJ"/>
+                                <exclude reference="8SN-T4-uKe"/>
+                                <exclude reference="8bl-ba-5YL"/>
+                                <exclude reference="Bya-8x-kls"/>
+                                <exclude reference="XQq-s0-kRh"/>
+                                <exclude reference="17O-E1-r5I"/>
+                                <exclude reference="E8J-dT-3YD"/>
+                                <exclude reference="Fs4-Ge-Few"/>
+                                <exclude reference="R3U-Bv-i6F"/>
+                                <exclude reference="aZx-tA-YfR"/>
+                                <exclude reference="hWu-hc-WdU"/>
+                                <exclude reference="iEv-xD-pgp"/>
+                                <exclude reference="znh-TY-QFK"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Tpz-yl-9q7"/>
+                                <exclude reference="wS7-Nk-3QQ"/>
+                                <include reference="17O-E1-r5I"/>
+                                <exclude reference="5tp-kV-rQd"/>
+                                <include reference="R3U-Bv-i6F"/>
+                                <include reference="aZx-tA-YfR"/>
+                                <exclude reference="iCe-DH-4we"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="6mO-XQ-dd7"/>
+                                <exclude reference="sWR-d7-Nf2"/>
+                                <exclude reference="wS7-Nk-3QQ"/>
+                                <exclude reference="5tp-kV-rQd"/>
+                                <include reference="E8J-dT-3YD"/>
+                                <include reference="Fs4-Ge-Few"/>
+                                <include reference="hWu-hc-WdU"/>
+                                <exclude reference="iCe-DH-4we"/>
+                                <exclude reference="znh-TY-QFK"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="B1C-ne-f4Q"/>
+                                <exclude reference="NAR-yR-bCL"/>
+                                <exclude reference="wC8-qm-kZQ"/>
+                                <include reference="4UQ-4t-oAJ"/>
+                                <include reference="8SN-T4-uKe"/>
+                                <include reference="8bl-ba-5YL"/>
+                                <exclude reference="Are-2w-PBX"/>
+                                <include reference="Bya-8x-kls"/>
+                                <exclude reference="DE8-OI-Ywq"/>
+                                <exclude reference="PJ9-o7-yF0"/>
+                                <include reference="XQq-s0-kRh"/>
+                                <exclude reference="E8J-dT-3YD"/>
+                                <exclude reference="hWu-hc-WdU"/>
+                                <include reference="iEv-xD-pgp"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="ha6-mw-LMP"/>
                     <connections>
@@ -338,7 +415,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gw4-RJ-UaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="270.31484257871068"/>
+            <point key="canvasLocation" x="707.24637681159425" y="269.02173913043481"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6Fz-LQ-TpC">
